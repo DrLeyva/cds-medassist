@@ -1,7 +1,7 @@
-from utils.fhir_loader import load_fhir_resource
+    from utils.fhir_loader import load_fhir_resource
 🔍 Purpose: Imports the function that loads a FHIR-formatted JSON file from the utils/ folder.
 
-from rules.high_bp_rule import evaluate_bp
+    from rules.high_bp_rule import evaluate_bp
 🔍 Purpose: Imports the blood pressure rule logic from the rules/ folder.
 
 def main():
@@ -26,10 +26,10 @@ Returns a CDS suggestion if BP > 140, otherwise returns None.
         print("✅ No alerts. Patient is within normal range.")
 ✅ Purpose: If the rule is not triggered, indicate that everything is normal.
 
-if __name__ == "__main__":
+    if __name__ == "__main__":
     main()
 
 🚦 Purpose: Ensures the main() function runs only when this script is executed directly, not when imported.
 
-💡 TL;DR Summary:
+    💡 TL;DR Summary:
 This script loads a sample patient observation (FHIR JSON), evaluates it against a blood pressure rule, and displays a CDS recommendation if the rule triggers.
