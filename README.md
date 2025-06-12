@@ -20,7 +20,7 @@ python main.py
 Summary: High Blood Pressure
 Detail: Systolic BP is 150 mmHg. Recommend lifestyle changes.
 Indicator: warning
-
+```
 ---
 
 Created by Aaron Leyva | Inspired by HL7 FHIR & CDS Hooks ecosystem
