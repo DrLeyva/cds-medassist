@@ -10,24 +10,8 @@ def evaluate_bp(observation):
             "indicator": "warning"
         }
     return None
-ChatGPT said:
-You got it! Here's the complete Markdown block for explaining your high_bp_rule.py file — all in one compiler-friendly format, ready to paste into EXPLAINED.md or your repo.
 
-markdown
-Copy
-Edit
-## 🧠 high_bp_rule.py — Detailed Walkthrough
 
-```python
-def evaluate_bp(observation):
-    value = observation.get('valueQuantity', {}).get('value', 0)
-    if value > 140:
-        return {
-            "summary": "High Blood Pressure",
-            "detail": f"Systolic BP is {value} mmHg. Recommend lifestyle changes.",
-            "indicator": "warning"
-        }
-    return None
 🔍 Line-by-Line Breakdown
 def evaluate_bp(observation):
 🔧 What it does:
