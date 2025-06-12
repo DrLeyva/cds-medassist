@@ -53,8 +53,3 @@ Converts it into a Python dictionary
 
 Returns that dictionary for use in clinical decision logic
 
----
-
-✅ Paste that entire block into `EXPLAINED.md` or a new section in `README.md` and it’ll render perfectly on GitHub.
-
-Want the same one-compiler format for `high_bp_rule.py` next?
