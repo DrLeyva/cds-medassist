@@ -1,0 +1,16 @@
+{
+    "resourceType": "Observation",
+    "id": "bp-reading-1",
+    "status": "final",
+    "code": {
+        "text": "Blood Pressure"
+    },
+    "valueQuantity": {
+        "value": 150,
+        "unit": "mmHg"
+    },
+    "subject": {
+        "reference": "Patient/1"
+    },
+    "effectiveDateTime": "2025-06-01T08:30:00+00:00"
+}
