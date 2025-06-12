@@ -4,7 +4,7 @@
     from rules.high_bp_rule import evaluate_bp
 🔍 Purpose: Imports the blood pressure rule logic from the rules/ folder.
 
-def main():
+    def main():
 🚪 Purpose: Defines the entry point of the program — this is where the logic starts.
 
     observation = load_fhir_resource("fhir_samples/patient_1.json")
@@ -12,7 +12,6 @@ def main():
 
     result = evaluate_bp(observation)
 🧠 Purpose: Passes the FHIR observation into the blood pressure rule function.
-
 Returns a CDS suggestion if BP > 140, otherwise returns None.
 
     if result:
