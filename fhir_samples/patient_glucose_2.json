@@ -1,0 +1,16 @@
+{
+  "resourceType": "Observation",
+  "id": "glucose-reading-1",
+  "status": "final",
+  "code": {
+    "text": "Blood Glucose"
+  },
+  "valueQuantity": {
+    "value": 210,
+    "unit": "mg/dL"
+  },
+  "subject": {
+    "reference": "Patient/2"
+  },
+  "effectiveDateTime": "2025-06-11T08:30:00+00:00"
+}
