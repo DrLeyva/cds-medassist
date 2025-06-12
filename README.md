@@ -26,7 +26,7 @@ When run against a FHIR `Observation` file containing a **systolic blood pressur
 Summary: High Blood Pressure
 Detail: Systolic BP is 150 mmHg. Recommend lifestyle changes.
 Indicator: warning
----
+
 
 
 ---
