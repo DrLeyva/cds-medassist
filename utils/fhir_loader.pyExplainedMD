@@ -1,0 +1,64 @@
+🔍 Line-by-Line Explanation
+
+import json
+📦 What it does:
+Imports Python's built-in json module.
+
+🧠 Why it matters:
+FHIR resources (like Observation, Patient, Medication) are typically represented in JSON format when transmitted via APIs or saved as files. So you need the json module to parse them into Python dictionaries.
+
+
+
+def load_fhir_resource(path):
+🔧 What it does:
+Defines a function named load_fhir_resource, which takes path as a parameter (this is the file path to a .json file).
+
+🧠 Why it's important:
+This makes it reusable. You could call:
+
+
+load_fhir_resource("fhir_samples/patient_1.json")
+or any other path with a valid FHIR resource file.
+
+
+    with open(path, 'r') as file:
+📂 What it does:
+Opens the JSON file in read mode ('r').
+The with statement ensures the file is safely closed after it’s read.
+
+🧠 Why it matters:
+This prevents file handle leaks and keeps your script clean and error-resistant — very important in production or clinical data systems.
+
+
+        return json.load(file)
+🔄 What it does:
+Parses the file’s contents using json.load(), converting the JSON text into a Python dictionary.
+
+✅ Return value:
+This dictionary represents the FHIR resource (like an Observation) and can be passed to other functions like your evaluate_bp() rule.
+
+🧠 Real-World Analogy
+Imagine your hospital sends a BP reading in this file:
+
+  json
+{
+  "resourceType": "Observation",
+  "id": "bp-reading-1",
+  "valueQuantity": {
+    "value": 150,
+    "unit": "mmHg"
+  }
+}
+This function takes that file and turns it into a Python object so your CDS logic can say:
+
+
+  if observation["valueQuantity"]["value"] > 140:
+    # Alert!
+✅ TL;DR Summary
+The load_fhir_resource() function:
+
+Opens a FHIR .json file
+
+Parses its contents into a Python dictionary
+
+Returns it for downstream use in your clinical rule logic
