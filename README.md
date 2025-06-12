@@ -68,10 +68,10 @@ python main.py
 
 ## 🧪 Sample Output
 
-📋 CDS Suggestion Card
-Summary: High Blood Pressure
-Detail: Systolic BP is 150 mmHg. Recommend lifestyle changes.
-Indicator: warning
+📋 CDS Suggestion Card<br /> 
+Summary: High Blood Pressure<br /> 
+Detail: Systolic BP is 150 mmHg. Recommend lifestyle changes.<br /> 
+Indicator: warning<br /> 
 
 
 ---
