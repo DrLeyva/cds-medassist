@@ -4,6 +4,8 @@ This file contains a sample **FHIR `Observation`** resource representing a patie
 
 In real-world clinical systems (e.g., Epic, Cerner), patient data is often structured in this format and exchanged through secure APIs.
 
+A FHIR Observation is a standardized record of a clinical measurement, finding, or test result related to a specific patient.
+
 Example snippet:
 
 ```json
