@@ -7,6 +7,7 @@ def load_fhir_resource(path):
     with open(path, 'r') as file:
         return json.load(file)
 
+🔍 Line-by-Line Breakdown
 import json
 📦 What it does:
 Imports Python’s built-in json module.
@@ -21,9 +22,8 @@ Defines a function named load_fhir_resource, which accepts a path (the file loca
 
 🔁 Why it’s useful:
 You can reuse this function to load any FHIR-formatted file dynamically, such as:
-
-
 load_fhir_resource("fhir_samples/patient_1.json")
+
 with open(path, 'r') as file:
 📂 What it does:
 Opens the file located at path in read mode.
@@ -52,3 +52,9 @@ Opens a FHIR-formatted .json file
 Converts it into a Python dictionary
 
 Returns that dictionary for use in clinical decision logic
+
+---
+
+✅ Paste that entire block into `EXPLAINED.md` or a new section in `README.md` and it’ll render perfectly on GitHub.
+
+Want the same one-compiler format for `high_bp_rule.py` next?
