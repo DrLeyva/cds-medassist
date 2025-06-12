@@ -22,10 +22,10 @@ This project was built to showcase knowledge of structured healthcare data, clin
 
 When run against a FHIR `Observation` file containing a **systolic blood pressure** of `150 mmHg`, the engine returns:
 
-📋 CDS Suggestion Card
-Summary: High Blood Pressure
-Detail: Systolic BP is 150 mmHg. Recommend lifestyle changes.
-Indicator: warning
+📋 CDS Suggestion Card <br /> 
+Summary: High Blood Pressure <br /> 
+Detail: Systolic BP is 150 mmHg. Recommend lifestyle changes. <br /> 
+Indicator: warning <br /> 
 
 
 
